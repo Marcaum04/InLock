@@ -15,12 +15,12 @@ namespace senai_InLock_WebApi.Controllers
     [Route("api/[controller]")]
 
     [ApiController]
-    public class EstudioController : ControllerBase
+    public class EstudiosController : ControllerBase
     {
 
         private IEstudioRepository _EstudioRepository { get; set; }
 
-        public EstudioController()
+        public EstudiosController()
         {
             _EstudioRepository = new EstudioRepository();
         }
@@ -129,5 +129,4 @@ namespace senai_InLock_WebApi.Controllers
         }
     }
 
-}
 }

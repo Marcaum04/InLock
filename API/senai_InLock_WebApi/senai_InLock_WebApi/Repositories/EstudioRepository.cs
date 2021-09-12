@@ -11,7 +11,8 @@ namespace senai_InLock_WebApi.Repositories
     public class EstudioRepository : IEstudioRepository
     {
 
-        private string stringConexao = @"Data Source=LAPTOP-BSMJ3RKB\SQLEXPRESS; initial catalog=inlock_games_manha; user Id=sa; pwd=senai@132;";
+        //private string stringConexao = @"Data Source=LAPTOP-BSMJ3RKB\SQLEXPRESS; initial catalog=inlock_games_manha; user Id=sa; pwd=senai@132;";
+        private string stringConexao = @"Data Source=MARCAUM\SQLEXPRESS; initial catalog=inlock_games_manha; user Id=sa; pwd=senai@132";
 
         public void AtualizarIdCorpo(EstudioDomain estudioAtualizado)
         {
@@ -56,7 +57,7 @@ namespace senai_InLock_WebApi.Repositories
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelectById = "SELECT idEstudio, nomeEstudio FROM jogos WHERE idJogos = @idJogo";
+                string querySelectById = "SELECT idEstudio, nomeEstudio FROM estudio WHERE idEstudio = @idEstudio";
 
                 con.Open();
 
@@ -73,7 +74,7 @@ namespace senai_InLock_WebApi.Repositories
                         EstudioDomain estudioBuscado = new EstudioDomain
                         {
                             idEstudio = Convert.ToInt32(reader["idEstudio"]),
-                            nomeEstudio = reader["nomeEstudio"].ToString(),
+                            nomeEstudio = reader["nomeEstudio"].ToString()
                         };
                         return estudioBuscado;
                     }
@@ -148,5 +149,5 @@ namespace senai_InLock_WebApi.Repositories
             return ListaEstudio;
         }
     }
-    }
-}
+ }
+

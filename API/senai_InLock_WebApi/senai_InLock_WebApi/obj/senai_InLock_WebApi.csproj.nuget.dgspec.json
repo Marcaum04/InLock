@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marda\\OneDrive\\Área de Trabalho\\TrabalhosBiel\\Senai\\inlock_games_manha\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marda\\OneDrive\\Área de Trabalho\\TrabalhosBiel\\Senai\\inlock_games_manha\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marda\\OneDrive\\Área de Trabalho\\TrabalhosBiel\\Senai\\inlock_games_manha\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj",
         "projectName": "senai_InLock_WebApi",
-        "projectPath": "C:\\Users\\marda\\OneDrive\\Área de Trabalho\\TrabalhosBiel\\Senai\\inlock_games_manha\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj",
-        "packagesPath": "C:\\Users\\marda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marda\\OneDrive\\Área de Trabalho\\TrabalhosBiel\\Senai\\inlock_games_manha\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\marda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

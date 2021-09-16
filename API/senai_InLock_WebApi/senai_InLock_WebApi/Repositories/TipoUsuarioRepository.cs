@@ -15,16 +15,16 @@ namespace senai_InLock_WebApi.Repositories
 
         public void AtualizarIdCorpo(TipoUsuarioDomain tipoUsuarioAtualizado)
         {
-            if (tipoUsuarioAtualizado.tipoUsuario != null)
+            if (tipoUsuarioAtualizado.tituloUsuario != null)
             {
                 using (SqlConnection con = new SqlConnection(stringConexao))
                 {
-                    string queryUpdateBody = "UPDATE tipoUsuario SET tipoUsuario = @novoTipoUsuario WHERE idTipoUsuario = @tipoUsuarioAtualizado";
+                    string queryUpdateBody = "UPDATE tipoUsuario SET tituloUsuario = @novoTipoUsuario WHERE idTipoUsuario = @tipoUsuarioAtualizado";
 
                     using (SqlCommand cmd = new SqlCommand(queryUpdateBody, con))
                     {
-                        cmd.Parameters.AddWithValue("@novoTipoUsuario", tipoUsuarioAtualizado.tipoUsuario);
-                        cmd.Parameters.AddWithValue("@idTipoUsuario", tipoUsuarioAtualizado.idTipoUsuario);
+                        cmd.Parameters.AddWithValue("@novoTipoUsuario", tipoUsuarioAtualizado.tituloUsuario);
+                        cmd.Parameters.AddWithValue("@tipoUsuarioAtualizado", tipoUsuarioAtualizado.idTipoUsuario);
 
                         con.Open();
 
@@ -38,12 +38,12 @@ namespace senai_InLock_WebApi.Repositories
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string queryUpdateUrl = "UPDATE tipoUsuario SET tipoUsuario = @novoTipoUsuario WHERE idTipoUsuario = @tipoUsuarioAtualizado";
+                string queryUpdateUrl = "UPDATE tipoUsuario SET tituloUsuario = @novoTipoUsuario WHERE idTipoUsuario = @tipoUsuarioAtualizado";
 
                 using (SqlCommand cmd = new SqlCommand(queryUpdateUrl, con))
                 {
-                    cmd.Parameters.AddWithValue("@novoTipoUsuario", tipoUsuarioAtualizado.tipoUsuario);
-                    cmd.Parameters.AddWithValue("@idEstudioAtualizado", idTipoUsuario);
+                    cmd.Parameters.AddWithValue("@novoTipoUsuario", tipoUsuarioAtualizado.tituloUsuario);
+                    cmd.Parameters.AddWithValue("@tipoUsuarioAtualizado", idTipoUsuario);
 
                     con.Open();
 
@@ -56,7 +56,7 @@ namespace senai_InLock_WebApi.Repositories
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelectById = "SELECT idTipoUsuario, tipoUsuario FROM tipoUsuario WHERE idTipoUSuario = @idTipoUsuario";
+                string querySelectById = "SELECT idTipoUsuario, tituloUsuario FROM tipoUsuario WHERE idTipoUSuario = @idTipoUsuario";
 
                 con.Open();
 
@@ -73,7 +73,7 @@ namespace senai_InLock_WebApi.Repositories
                         TipoUsuarioDomain tipoUsuarioBuscado = new TipoUsuarioDomain
                         {
                             idTipoUsuario = Convert.ToInt32(reader["idTipoUsuario"]),
-                            tipoUsuario = reader["tipoUsuario"].ToString()
+                            tituloUsuario = reader["tituloUsuario"].ToString()
                         };
                         return tipoUsuarioBuscado;
                     }
@@ -86,13 +86,13 @@ namespace senai_InLock_WebApi.Repositories
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string queryInsert = "INSERT INTO tipoUsuario (tipoUsuario) VALUES (@tipoUsuario)";
+                string queryInsert = "INSERT INTO tipoUsuario (tituloUsuario) VALUES (@tituloUsuario)";
 
 
                 using (SqlCommand cmd = new SqlCommand(queryInsert, con))
                 {
 
-                    cmd.Parameters.AddWithValue("@tipoUsuario", novoTipoUsuario.tipoUsuario);
+                    cmd.Parameters.AddWithValue("@tituloUsuario", novoTipoUsuario.tituloUsuario);
 
                     con.Open();
 
@@ -124,7 +124,7 @@ namespace senai_InLock_WebApi.Repositories
 
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string QuerySelectAll = "SELECT idTipoUsuario, tipoUsuario FROM tipoUsuario";
+                string QuerySelectAll = "SELECT idTipoUsuario, tituloUsuario FROM tipoUsuario";
 
                 con.Open();
 
@@ -136,17 +136,16 @@ namespace senai_InLock_WebApi.Repositories
 
                     while (rdr.Read())
                     {
-                        TipoUsuarioDomain tipoUsuario = new TipoUsuarioDomain()
+                        TipoUsuarioDomain TipoUsuario = new TipoUsuarioDomain()
                         {
                             idTipoUsuario = Convert.ToInt32(rdr[0]),
-                            tipoUsuario = rdr[1].ToString(),
+                            tituloUsuario = rdr[1].ToString(),
                         };
-                        ListaTipoUsuario.Add(tipoUsuario);
+                        ListaTipoUsuario.Add(TipoUsuario);
                     }
                 }
             };
             return ListaTipoUsuario;
         }
-    }
     }
 }

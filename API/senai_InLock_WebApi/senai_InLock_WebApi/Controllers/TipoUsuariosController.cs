@@ -29,7 +29,7 @@ namespace senai_InLock_WebApi.Controllers
 
         public IActionResult Get()
         {
-            List<TipoUsuarioDomain> ListaEstudio = _TipoUsuarioRepository.ListarTodos();
+            List<TipoUsuarioDomain> ListaTipoUsuario = _TipoUsuarioRepository.ListarTodos();
 
             return Ok(ListaTipoUsuario);
         }
@@ -85,7 +85,7 @@ namespace senai_InLock_WebApi.Controllers
         [HttpPut]
         public IActionResult PutBody(TipoUsuarioDomain tipoUsuarioAtualizado)
         {
-            if (tipoUsuarioAtualizado.tipoUsuario == null || tipoUsuarioAtualizado.idTipoUsuario == 0)
+            if (tipoUsuarioAtualizado.tituloUsuario == null || tipoUsuarioAtualizado.idTipoUsuario == 0)
             {
                 return BadRequest(
                     new
@@ -129,4 +129,4 @@ namespace senai_InLock_WebApi.Controllers
         }
     }
 }
-}
+

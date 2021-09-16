@@ -8,6 +8,6 @@ namespace senai_InLock_WebApi.Domains
     public class TipoUsuarioDomain
     {
         public int idTipoUsuario { get; set; }
-        public string tipoUsuario { get; set; }
+        public string tituloUsuario { get; set; }
     }
 }

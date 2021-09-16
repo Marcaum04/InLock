@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "4maPcWI7YXywr3+tqMSZGPU0quWlwhro/8wZjhOUkMaNpPUpl7OG2nQas0bXID7434ucNDrAiGjlw9VeFK/aqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\fic\\Desktop\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj",
-=======
-  "dgSpecHash": "VHMHgAcn5DDp4x/CEZfrDX33wefD9H4VmWEhS0okOn2NSFHuPvN3NzQZqG1HuKYgN2RljVRFVypCf/avbAzLhQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\fic\\Desktop\\a\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj",
->>>>>>> 02e00fb4967598082d49107f07c1b89f23b1cf29
   "expectedPackageFiles": [
     "C:\\Users\\fic\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\fic\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
@@ -20,5 +14,12 @@
     "C:\\Users\\fic\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\fic\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\fic\\Desktop\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

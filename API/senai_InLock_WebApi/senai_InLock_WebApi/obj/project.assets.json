@@ -459,19 +459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\fic\\Desktop\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj",
       "projectName": "senai_InLock_WebApi",
       "projectPath": "C:\\Users\\fic\\Desktop\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj",
       "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\fic\\Desktop\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\fic\\Desktop\\a\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj",
-      "projectName": "senai_InLock_WebApi",
-      "projectPath": "C:\\Users\\fic\\Desktop\\a\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\senai_InLock_WebApi.csproj",
-      "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fic\\Desktop\\a\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\obj\\",
->>>>>>> 02e00fb4967598082d49107f07c1b89f23b1cf29
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -523,8 +515,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\fic\\Desktop\\InLock\\API\\senai_InLock_WebApi\\senai_InLock_WebApi\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

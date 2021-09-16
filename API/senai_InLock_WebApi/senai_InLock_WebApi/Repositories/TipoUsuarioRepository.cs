@@ -148,5 +148,4 @@ namespace senai_InLock_WebApi.Repositories
             return ListaTipoUsuario;
         }
     }
-    }
 }

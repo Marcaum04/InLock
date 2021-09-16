@@ -29,7 +29,7 @@ namespace senai_InLock_WebApi.Controllers
 
         public IActionResult Get()
         {
-            List<TipoUsuarioDomain> ListaEstudio = _TipoUsuarioRepository.ListarTodos();
+            List<TipoUsuarioDomain> ListaTipoUsuario = _TipoUsuarioRepository.ListarTodos();
 
             return Ok(ListaTipoUsuario);
         }
@@ -128,5 +128,4 @@ namespace senai_InLock_WebApi.Controllers
             return StatusCode(204);
         }
     }
-}
 }

@@ -128,9 +128,5 @@ namespace senai_InLock_WebApi.Controllers
             return StatusCode(204);
         }
     }
-<<<<<<< HEAD
 }
 
-=======
-}
->>>>>>> 6f214a50770ee0cf50d36d34db3e75f69926df32

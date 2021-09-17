@@ -8,6 +8,9 @@ namespace senai_InLock_WebApi.Interfaces
         //Lista todos os Usuarios
         List<UsuarioDomain> ListarTodos();
 
+        //Valida o Usuário
+        UsuarioDomain BuscarPorEmailSenha(string email, string senha);
+
         //Buscar Pelo Id
         UsuarioDomain BuscarPorId(int idUsuario);
 

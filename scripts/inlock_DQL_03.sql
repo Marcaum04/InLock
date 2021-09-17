@@ -41,5 +41,9 @@ WHERE idEstudio = '2'
 SELECT * FROM estudio
 WHERE idEstudio = '3'
 
-
+SELECT idUsuario, nome, email, senha, tu.idTipoUsuario, tituloUsuario FROM usuario INNER JOIN                               tipoUsuario tu 
+                                        ON usuario.idTipoUsuario = tu.idTipoUsuario
+	                                    WHERE email  = 'admin@admin.com'
+	                                    AND senha = 'admin'
+										Go
 

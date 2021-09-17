@@ -3,8 +3,6 @@ using senai_InLock_WebApi.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace senai_InLock_WebApi.Repositories
 {
@@ -54,6 +52,44 @@ namespace senai_InLock_WebApi.Repositories
             }
         }
 
+        public UsuarioDomain BuscarPorEmailSenha(string email, string senha)
+        {
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                string querySelect = @"SELECT idUsuario, nome, email, senha, tu.idTipoUsuario, tituloUsuario FROM usuario INNER JOIN                               tipoUsuario tu 
+                                        ON usuario.idTipoUsuario = tu.idTipoUsuario
+	                                    WHERE email  = @email
+	                                    AND senha = @senha";
+
+                using (SqlCommand cmd = new SqlCommand(querySelect, con))
+                {
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@senha", senha);
+
+                    con.Open();
+
+                    SqlDataReader rdr = cmd.ExecuteReader();
+
+                    if (rdr.Read())
+                    {
+                        UsuarioDomain usuarioBuscado = new UsuarioDomain
+                        {
+                            idUsuario = Convert.ToInt32(rdr["idUsuario"]),
+                            nome = rdr["nome"].ToString(),
+                            email = rdr["email"].ToString(),
+                            senha = rdr["senha"].ToString(),
+                            TipoUsuario = new TipoUsuarioDomain
+                            {
+                                idTipoUsuario = Convert.ToInt32(rdr["idTipoUsuario"]),
+                                tituloUsuario = rdr["tituloUsuario"].ToString()
+                            }
+                        };
+                        return usuarioBuscado;
+                    }
+                    return null;
+                }
+            } 
+        }
         public UsuarioDomain BuscarPorId(int idUsuario)
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
@@ -78,10 +114,10 @@ namespace senai_InLock_WebApi.Repositories
                             nome = reader["nome"].ToString(),
                             email = reader["email"].ToString(),
                             senha = reader["senha"].ToString(),
-                            TipoUsuario = new TipoUsuarioDomain() 
-                            { 
-                               idTipoUsuario = Convert.ToInt32(reader["idTipoUsuario"]),
-                               tipoUsuario = reader["tituloUsuario"].ToString()
+                            TipoUsuario = new TipoUsuarioDomain()
+                            {
+                                idTipoUsuario = Convert.ToInt32(reader["idTipoUsuario"]),
+                                tituloUsuario = reader["tituloUsuario"].ToString()
                             }
                         };
                         return usuarioBuscado;
@@ -157,7 +193,7 @@ namespace senai_InLock_WebApi.Repositories
                             TipoUsuario = new TipoUsuarioDomain
                             {
                                 idTipoUsuario = Convert.ToInt32(rdr["idTipoUsuario"]),
-                                tipoUsuario = rdr["tituloUsuario"].ToString()
+                                tituloUsuario = rdr["tituloUsuario"].ToString()
                             },
                         };
                         ListaUsuarios.Add(usuario);
@@ -166,5 +202,5 @@ namespace senai_InLock_WebApi.Repositories
             };
             return ListaUsuarios;
         }
-    }
+    } 
 }

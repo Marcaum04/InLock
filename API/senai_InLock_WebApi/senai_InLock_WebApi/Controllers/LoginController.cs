@@ -1,15 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using senai_InLock_WebApi.Domains;
 using senai_InLock_WebApi.Interfaces;
 using senai_InLock_WebApi.Repositories;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
-using System.Threading.Tasks;
 
 namespace senai_InLock_WebApi.Controllers
 {
@@ -24,7 +20,7 @@ namespace senai_InLock_WebApi.Controllers
             _usuarioRepository = new UsuarioRepository();
         }
 
-        [HttpPost("Login")]
+        [HttpPost]
         public IActionResult Login(UsuarioDomain login)
         {
             UsuarioDomain usuarioBuscado = _usuarioRepository.BuscarPorEmailSenha(login.email, login.senha);

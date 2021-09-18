@@ -95,3 +95,10 @@ C:\Users\fic\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debu
 C:\Users\fic\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\fic\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\fic\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

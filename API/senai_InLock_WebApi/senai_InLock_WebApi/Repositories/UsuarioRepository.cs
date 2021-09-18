@@ -8,7 +8,8 @@ namespace senai_InLock_WebApi.Repositories
 {
     public class UsuarioRepository : IUsuarioRepository
     {
-        private string stringConexao = @"Data Source=NOTE0113C5\SQLEXPRESS; initial catalog=inlock_games_manha; user Id=sa; pwd=Senai@132";
+        //private string stringConexao = @"Data Source=NOTE0113C5\SQLEXPRESS; initial catalog=inlock_games_manha; user Id=sa; pwd=Senai@132";
+        private string stringConexao = @"Data Source=MARCAUM\SQLEXPRESS; initial catalog=inlock_games_manha; user Id=sa; pwd=senai@132";
         public void AtualizarIdCorpo(UsuarioDomain usuarioAtualizado)
         {
             if (usuarioAtualizado.nome != null)
@@ -56,10 +57,7 @@ namespace senai_InLock_WebApi.Repositories
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelect = @"SELECT idUsuario, nome, email, senha, tu.idTipoUsuario, tituloUsuario FROM usuario INNER JOIN                               tipoUsuario tu 
-                                        ON usuario.idTipoUsuario = tu.idTipoUsuario
-	                                    WHERE email  = @email
-	                                    AND senha = @senha";
+                string querySelect = @"SELECT idUsuario, nome, email, senha, tu.idTipoUsuario, tituloUsuario FROM usuario INNER JOIN tipoUsuario tu ON usuario.idTipoUsuario = tu.idTipoUsuario WHERE email  = @email AND senha = @senha";
 
                 using (SqlCommand cmd = new SqlCommand(querySelect, con))
                 {

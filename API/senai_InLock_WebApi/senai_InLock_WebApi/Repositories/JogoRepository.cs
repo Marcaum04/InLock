@@ -11,8 +11,8 @@ namespace senai_InLock_WebApi.Repositories
     public class JogoRepository : IJogoRepository
     {
         //private string stringConexao = @"Data Source=NOTE0113C5\SQLEXPRESS; initial catalog=inlock_games_manha; user Id=sa; pwd=Senai@132";
-        //private string stringConexao = @"Data Source=MARCAUM\SQLEXPRESS; initial catalog=inlock_games_manha; user Id=sa; pwd=senai@132";
-        private string stringConexao = @"Data Source=LAPTOP-BSMJ3RKB\SQLEXPRESS; initial catalog=inlock_games_manha; user Id=sa; pwd=senai@132;";
+        private string stringConexao = @"Data Source=MARCAUM\SQLEXPRESS; initial catalog=inlock_games_manha; user Id=sa; pwd=senai@132";
+        //private string stringConexao = @"Data Source=LAPTOP-BSMJ3RKB\SQLEXPRESS; initial catalog=inlock_games_manha; user Id=sa; pwd=senai@132;";
         public void AtualizarIdCorpo(JogoDomain jogoAtualizado)
         {
             if(jogoAtualizado.nomeJogo != null)

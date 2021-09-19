@@ -102,3 +102,10 @@ C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\
 C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\senai_InLock_WebApi.xml
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\obj\Debug\net5.0\senai_InLock_WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Usuario\Desktop\InLock\API\senai_InLock_WebApi\senai_InLock_WebApi\obj\Debug\net5.0\senai_InLock_WebApi.xml
